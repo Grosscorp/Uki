@@ -1,0 +1,23 @@
+.contacts {
+  padding-left: 38px;
+
+  @include col;
+  @include size(4);
+  @include size-md(6);
+  @include size-xs(12);
+  @include md-block {
+    padding: 0;
+  }
+
+  &__info {
+    font-family: $main-font;
+    font-weight: 300;
+    font-size:14px;
+    text-align: center;
+    margin: -7px 15px 25px 0;
+
+    @include md-block {
+      margin: 0 auto 25px auto;
+    }
+  }
+}

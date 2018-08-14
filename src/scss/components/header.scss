@@ -1,0 +1,19 @@
+.header {
+  display: block;
+  width: 100%;
+
+  @include sm-block {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 11;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+
+    @include wrap;
+    @include sm(display, none);
+  }
+
+}

@@ -1,0 +1,32 @@
+.search {
+  background: rgba(255,255,255,0.8);
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: flex-start;
+  margin: 5px 0;
+  max-width: 177px;
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: 16px;
+
+  &__text {
+    background: none;
+    width: 80%;
+    border: none;
+    padding: 3px 0 4px 12px;
+    color: $dark;
+
+    &::placeholder {
+      color: $dark;
+      opacity: 1;
+    }
+  }
+
+  &__icon {
+    background: none;
+    border: none;
+    padding: 5px 5px 5px 2px;
+    color: $dark;
+    cursor: pointer;
+  }
+}

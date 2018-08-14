@@ -1,0 +1,19 @@
+.brands {
+  background: #222222;
+  padding: 22px 0 33px 0;
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+
+    @include wrap;
+  }
+
+  &__item {
+    margin: 0 20px;
+
+    @include xs-block {
+      margin: 0 10px;
+    }
+  }
+}

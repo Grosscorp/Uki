@@ -1,0 +1,67 @@
+.recent-posts {
+  padding-left: 10px;
+
+  @include col;
+  @include size(4);
+  @include size-md(6);
+  @include size-xs(12);
+  @include md-block {
+    padding: 0;
+  }
+  
+  &__item {
+    display: flex;
+    margin: 0 0 11px 20px;
+
+    @include md-block {
+      margin: 0 0 11px 0;
+      justify-content: center;      
+    }
+  }
+
+  &__img {
+    max-width: 53px;
+    height: 53px;
+    border-radius: 4px; 
+    margin: -2px 2px;
+  }
+
+  &__signature {
+    display: flex;
+    flex-direction: column;
+    font-family: $second-font;
+    font-weight: 300;
+    color: $light;
+  }
+
+  &__text {
+    margin: 0 0 3px 5px;
+  }
+
+  &__badge {
+    display: flex;
+    align-self: flex-start;
+    margin: 0 0 0 5px;
+    padding: 1px 5px;
+    border-radius: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+
+    &--mag {
+      background: $main;
+    }
+    
+    &--ui {
+      background: #ffba00;
+    }
+
+    &--photo {
+      background: #089dea;
+    }
+
+    &--book {
+      background: #f34d04;
+    }
+
+  }
+}

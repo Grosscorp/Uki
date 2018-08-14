@@ -1,0 +1,38 @@
+.btn-group {
+  background: rgba(255,255,255,0.8);
+  border-radius: 20px;
+  border: none;
+  padding: 3px 15px 2px 10px;
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: 16px;
+  cursor: pointer;
+  color: $dark;
+
+  &__icon {
+    position: relative;
+    font-size: 10px;
+    padding: 0 0 0 5px;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+
+  &--bottom {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@keyframes drop {
+  0%{top: -2px;}
+  25%{top: 0px;}
+  50%{top: 2px;}
+  75%{top: 0px;}
+  100%{top: -2px;}
+}

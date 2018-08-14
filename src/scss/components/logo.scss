@@ -1,0 +1,20 @@
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 24px;
+  font-family: $curly-font;
+  margin-top: 5px;
+
+  @include md-block {
+      left: 60%;
+      transform: translate(-60%);
+  }
+
+  @include sm-block {
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 15px;
+  }
+
+}

@@ -1,0 +1,21 @@
+.center {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__title {
+      font-family: $second-font;
+      font-weight: 700;
+      font-size: 53px;
+      margin: 0 30px 30px;
+      text-align: center;
+      text-shadow: 0 0 1px $text;
+
+      @include xs-block {
+        font-size: 40px;
+      }
+    }
+}

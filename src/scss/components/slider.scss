@@ -1,0 +1,65 @@
+.slider {
+  display: flex;
+  margin: auto;
+  width: 40%;
+  font-family: $main-font;
+  color: #444444;
+
+  @include lg(width, 60%);
+
+  &__item {
+    text-align: center;
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  &__img {
+    border: 2px solid #e1e1e1;
+    border-radius: 50%;
+    padding: 5px;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+  }
+
+  &__signature {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  &__company {
+    font-weight: 700;
+    color: #cccccc;
+  }
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: -5px;
+  padding: 25px;
+  z-index: 1;
+  cursor: pointer;
+  color: #e0dfdf;
+  
+  &::before,
+  &::after {
+    font-size: 22px;
+  }
+
+  @include md(top, 30%);
+}
+
+.prev {
+  left: -30%;
+}
+
+.next {
+  right: -30%;
+}

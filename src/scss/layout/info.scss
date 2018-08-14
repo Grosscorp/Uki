@@ -1,0 +1,11 @@
+.info {
+
+  @include wrap;  
+
+  &__items {
+    padding: 27px 0 32px 0;
+
+    @include row;
+  }
+}
+

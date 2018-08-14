@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Test project for Ukietech">
+  <meta name="keywords" content="front-end, test project, Ukietech">
+  <title>Switch</title>
+</head>
+<body>
+
+  <section id="start" class="start">
+    <header class="header">
+      <a href="#start" class="logo">Switch</a>
+      <button class="hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="header__items">
+        <nav class="nav">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#start" class="nav__link nav__link--underline">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#wwd" class="nav__link nav__link--underline">What we do?</a>
+            </li>
+            <li class="nav__item">
+              <a href="#testimonials" class="nav__link nav__link--underline">Testimonial</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link nav__link--underline">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="search">
+          <input class="search__text" type="text" placeholder="Search.." name="search">
+          <button class="search__icon" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </header>
+    <div class="center">
+      <h1 class="center__title">Art is Eternal Happiness</h1>
+      <button class="btn">WORK WITH US</button>
+    </div>
+    <a href="#wwd" class="btn-group btn-group--bottom">
+      <span class="btn-group__text">scroll down</span>
+      <span class="btn-group__icon"><i class="fa fa-arrow-down"></i></span>
+    </a>
+  </section>
+
+  <section id="wwd" class="wwd">
+    <h2 class="title">WHAT WE DO</h2>
+    <p class="title__text title__text--light">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+    <div class="wwd__items">
+      <div class="wwd__item">
+        <div class="wwd__icon">
+          <i class="fa fa-camera-retro"></i>
+        </div>
+        <h3 class="wwd__title">Lorem Ipsum</h3>
+        <p class="wwd__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+        </p>
+        <button class="btn btn--small">Learn more</button>
+      </div>
+      <div class="wwd__item">
+        <div class="wwd__icon">
+          <i class="fa fa-tachometer wwd__icon--center"></i>
+        </div>
+        <h3 class="wwd__title">Lorem Ipsum</h3>
+        <p class="wwd__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+        </p>
+        <button class="btn btn--small">Learn more</button>
+      </div>
+      <div class="wwd__item">
+        <div class="wwd__icon">
+          <i class="fa fa-briefcase" aria-hidden="true"></i>
+        </div>
+        <h3 class="wwd__title">Lorem Ipsum</h3>
+        <p class="wwd__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+        </p>
+        <button class="btn btn--small">Learn more</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2 class="title">TESTIMONIALS</h2>
+    <p class="title__text title__text--light">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+    <div class="slider">
+      <div class="slider__item">
+        <p class="slider__text">
+          “Awalnya saya tidak menderita penyakit apapun,
+          namun setelah saya tidak berobat ke klinik tongfang, saya dinyatakan
+          tidak menderita penyakit apapun!”
+        </p>
+        <div class="slider__caption">
+          <img src="<%= require('./img/content/Herp.png') %>" alt="avatar" class="slider__img">
+          <div class="slider__signature">
+            <span class="slider__name">
+              Mr. Herp
+            </span>
+            <span class="slider__company">
+              CEO of Meme, Inc.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <p class="slider__text">
+          “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eius dolorem. Corrupti obcaecati dolorem porro voluptate repudiandae, atque iure nihil magnam incidunt esse voluptatibus blanditiis rem nostrum enim debitis, illum veritatis delectus, ipsam eos numquam, rerum sunt consequuntur eaque labore. Reiciendis beatae ex mollitia est dolorem, neque ipsa adipisci, excepturi.”
+        </p>
+        <div class="slider__caption">
+          <img src="<%= require('./img/content/Herp.png') %>" alt="avatar" class="slider__img">
+          <div class="slider__signature">
+            <span class="slider__name">
+              Mr. Herp
+            </span>
+            <span class="slider__company">
+              CEO of Meme, Inc.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mtt">
+    <h2 class="title title--color-two">MEET THE TEAM</h2>
+    <p class="title__text title__text--color-two">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+    <div class="team">
+      <div class="team__item">
+        <div class="team__photo">
+          <img src="<%= require('./img/content/a.png') %>" alt="avatar" class="team__img">
+        </div>
+        <div class="team__name">
+          Krisna Wijaya
+        </div>
+        <div class="social">
+          <a href="#" class="social__icon social__icon--dr">
+            <i class="fa fa-dribbble"></i>
+          </a>
+          <a href="#" class="social__icon social__icon--be">
+            <i class="fa fa-behance"></i>
+          </a>
+          <a href="#" class="social__icon social__icon--tw">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="team__item">
+        <div class="team__photo">
+          <img src="<%= require('./img/content/b.png') %>" alt="avatar" class="team__img">
+        </div>
+        <div class="team__name">
+          Gabriel Yoshua
+        </div>
+        <div class="social">
+          <a href="#" class="social__icon social__icon--dr">
+            <i class="fa fa-dribbble"></i>
+          </a>
+          <a href="#" class="social__icon social__icon--be">
+            <i class="fa fa-behance"></i>
+          </a>
+          <a href="#" class="social__icon social__icon--tw">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="team__item">
+        <div class="team__photo">
+          <img src="<%= require('./img/content/c.png') %>" alt="avatar" class="team__img">
+        </div>
+        <div class="team__name">
+          Adik N.K.L
+        </div>
+        <div class="social">
+          <a href="#" class="social__icon social__icon--dr">
+            <i class="fa fa-dribbble"></i>
+          </a>
+          <a href="#" class="social__icon social__icon--be">
+            <i class="fa fa-behance"></i>
+          </a>
+          <a href="#" class="social__icon social__icon--tw">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="team__item">
+        <div class="team__photo">
+          <img src="<%= require('./img/content/d.png') %>" alt="avatar" class="team__img">
+        </div>
+        <div class="team__name">
+          Zan D.J
+        </div>
+        <div class="social">
+          <a href="#" class="social__icon social__icon--dr">
+            <i class="fa fa-dribbble"></i>
+          </a>
+          <a href="#" class="social__icon social__icon--be">
+            <i class="fa fa-behance"></i>
+          </a>
+          <a href="#" class="social__icon social__icon--tw">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="team__item">
+        <div class="team__photo">
+          <img src="<%= require('./img/content/e.png') %>" alt="avatar" class="team__img">
+        </div>
+        <div class="team__name">
+          Faizal Febri
+        </div>
+        <div class="social">
+          <a href="#" class="social__icon social__icon--dr">
+            <i class="fa fa-dribbble"></i>
+          </a>
+          <a href="#" class="social__icon social__icon--be">
+            <i class="fa fa-behance"></i>
+          </a>
+          <a href="#" class="social__icon social__icon--tw">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="work-btn">
+    <button class="btn btn--shadow btn--middle">WORK WITH US</button>
+  </div>
+
+  <footer class="footer">
+    <section class="info">
+      <div class="info__items">
+        <section class="about-us">
+          <h3 class="title title--small">ABOUT US</h3>
+          <p class="about-us__text">
+            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Ut aliquam massa nisl quis neque. Suspendisse in orci enim.Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.
+          </p>
+          <div class="social">
+            <a href="#" class="social__icon social__icon--dr">
+              <i class="fa fa-dribbble"></i>
+            </a>
+            <a href="#" class="social__icon social__icon--be">
+              <i class="fa fa-behance"></i>
+            </a>
+            <a href="#" class="social__icon social__icon--tw">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </section>
+        <section class="recent-posts">
+          <h3 class="title title--small">RECENT POSTS</h3>
+          <div class="recent-posts__item">
+            <a href="#" class="recent-post__link">
+              <img src="<%= require('./img/content/r1.png') %>" alt="" class="recent-posts__img">
+            </a>
+            <div class="recent-posts__signature">
+              <a href="#" class="recent-posts__text">Lorem Ipsum Dolor Sit Amet.</a>
+              <a href="#" class="recent-posts__badge recent-posts__badge--mag">MAGAZINE</a>
+            </div>
+          </div>
+          <div class="recent-posts__item">
+            <a href="#" class="recent-post__link">
+              <img src="<%= require('./img/content/r2.png') %>" alt="" class="recent-posts__img">
+            </a>
+            <div class="recent-posts__signature">
+              <a href="#" class="recent-posts__text">Lorem Ipsum Dolor Sit Amet.</a>
+              <a href="#" class="recent-posts__badge recent-posts__badge--ui">UI DESIGN</a>
+            </div>
+          </div>
+          <div class="recent-posts__item">
+            <a href="#" class="recent-post__link">
+              <img src="<%= require('./img/content/r3.png') %>" alt="" class="recent-posts__img">
+            </a>
+            <div class="recent-posts__signature">
+              <a href="#" class="recent-posts__text">Lorem Ipsum Dolor Sit Amet.</a>
+              <a href="#" class="recent-posts__badge recent-posts__badge--photo">PHOTOGRAPHY</a>
+            </div>
+          </div>
+          <div class="recent-posts__item">
+            <a href="#" class="recent-post__link">
+              <img src="<%= require('./img/content/r4.png') %>" alt="" class="recent-posts__img">
+            </a>
+            <div class="recent-posts__signature">
+              <a href="#" class="recent-posts__text">Lorem Ipsum Dolor Sit Amet.</a>
+              <a href="#" class="recent-posts__badge recent-posts__badge--book">BOOK</a>
+            </div>
+          </div>
+          <div class="recent-posts__item">
+            <a href="#" class="recent-post__link">
+              <img src="<%= require('./img/content/r5.png') %>" alt="" class="recent-posts__img">
+            </a>
+            <div class="recent-posts__signature">
+              <a href="#" class="recent-posts__text recent-post__link">Lorem Ipsum Dolor Sit Amet.</a>
+              <a href="#" class="recent-posts__badge recent-posts__badge--ui">UI DESIGN</a>
+            </div>
+          </div>
+        </section>
+        <section id="contacts" class="contacts">
+          <h3 class="title title--small">CONTACT US</h3>
+          <address class="contacts__info">
+            10044 West 23th Street, Suite 721<br>
+            New York NY 10010<br>
+            Email: <a href="mailto:Username@email.com">Username@email.com</a><br>
+            Phone: +1 (0) 123 4567 890<br>
+            Fax: +1 (0) 321 4567 890<br>
+          </address>
+          <form class="form">
+            <input class="form__item form__item--name" type="text" placeholder="Your Name.." name="name" id="name">
+            <input class="form__item" type="text" placeholder="Your Email.." name="email" id="email">
+            <textarea class="form__item form__item--message" placeholder="Your Message.." name="message" id="massage" rows="5"></textarea>
+            <input class="form__btn" type="submit" value="SEND">
+          </form>
+        </section>
+      </div>
+    </section>
+    <section class="brands">
+      <h2 class="title title--small title--dark">AS SEEN ON</h2>
+      <div class="brands__items">
+        <div class="brands__item">
+          <img src="<%= require('./img/content/b1.png') %>" alt="" class="brands__img">
+        </div>
+        <div class="brands__item">
+          <img src="<%= require('./img/content/b2.png') %>" alt="" class="brands__img">
+        </div>
+        <div class="brands__item">
+          <img src="<%= require('./img/content/b3.png') %>" alt="" class="brands__img">
+        </div>
+        <div class="brands__item">
+          <img src="<%= require('./img/content/b4.png') %>" alt="" class="brands__img">
+        </div>
+      </div>
+    </section>
+    <section class="created-by">
+      <p class="created-by__text">made with
+        <svg class="created-by__heart" viewBox="0 0 32 29.6">
+          <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+        </svg>
+      by Krisna :)</p>
+    </section>
+  </footer>
+
+</body>
+</html>
