@@ -5,10 +5,8 @@ This is test task for Ukietech company.
 
 Project tree
 
-- dist: redy project
+- dist: ready project
 
 - src: working files
 
 Thank you!
-
-
